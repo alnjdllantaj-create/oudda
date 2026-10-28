@@ -1,0 +1,3 @@
+# بعد قبول حساب Google AdSense، أضف سطرًا واحدًا هنا بالشكل:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# لا تضف أي معرّف قبل الحصول عليه فعليًا من حسابك.

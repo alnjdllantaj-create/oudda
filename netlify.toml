@@ -1,0 +1,18 @@
+# ---------------------------------------------------------------------------
+# Oudda / عدّة — إعداد Netlify للنشر التلقائي من Git
+# المشروع: oudda-content  |  الرابط: https://oudda-content.netlify.app
+# ---------------------------------------------------------------------------
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # مهم: بلا هادو كيرجع canonical/sitemap فارغين وبريد الاتصل كيختفي
+  NEXT_PUBLIC_SITE_URL = "https://oudda-content.netlify.app"
+  NEXT_PUBLIC_CONTACT_EMAIL = "alnjdllantaj@gmail.com"
+  # AdSense: خلّيه فارغ حتى يجيك القبول الفعلي
+  # NEXT_PUBLIC_ADSENSE_CLIENT = "ca-pub-0000000000000000"
+
+# صفحة 404.html و _headers فـ out/ كتطبّق أوتوماتيكياً.
+# الروابط كلها كتنتهي بـ / (trailingSlash) — ما كنحتاجو حتى redirect إضافي.

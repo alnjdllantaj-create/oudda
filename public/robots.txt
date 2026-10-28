@@ -1,0 +1,4 @@
+# Oudda / عدّة
+User-agent: *
+Allow: /
+# Sitemap: ضبط NEXT_PUBLIC_SITE_URL ثم أعد البناء

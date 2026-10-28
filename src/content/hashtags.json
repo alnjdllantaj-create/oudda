@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "note": "قاعدة ثابتة أصلية — لا اتصال بأي API. Static original dataset — no API calls.",
+  "topics": [
+    {
+      "id": "food",
+      "kw": [
+        "طبخ",
+        "وصفة",
+        "أكل",
+        "طعام",
+        "مطبخ",
+        "حلويات",
+        "cuisine",
+        "recette",
+        "food",
+        "cooking",
+        "baking",
+        "plat",
+        " gateau"
+      ],
+      "ar": [
+        "طبخ",
+        "وصفاتسهلة",
+        "أكلبيتي",
+        "مطبخمغربي",
+        "حلويات",
+        "وصفةاليوم",
+        "طبخفيالبيت",
+        "أكلصحي",
+        "وصفاتسريعة"
+      ],
+      "fr": [
+        "cuisine",
+        "recette",
+        "faitmaison",
+        "cuisinemarocaine",
+        "patisserie",
+        "recetterapide",
+        "food",
+        "cooking",
+        "recettes"
+      ],
+      "en": [
+        "food",
+        "cooking",
+        "recipe",
+        "homemade",
+        "foodie",
+        "easyrecipe",
+        "moroccanfood",
+        "baking"
+      ]
+    },
+    {
+      "id": "travel",
+      "kw": [
+        "سفر",
+        "رحلة",
+        "سياحة",
+        "سفرية",
+        "voyage",
+        "travel",
+        "trip",
+        "tourisme",
+        "maroc"
+      ],
+      "ar": [
+        "سفر",
+        "رحلات",
+        "سياحة",
+        "اكتشفالمغرب",
+        "سفريات",
+        "رحلةاليوم",
+        "صورسفر",
+        "دليلسفر"
+      ],
+      "fr": [
+        "voyage",
+        "tourisme",
+        "decouverte",
+        "roadtrip",
+        "maroc",
+        "voyagez",
+        "carnetdevoyage"
+      ],
+      "en": [
+        "travel",
+        "wanderlust",
+        "trip",
+        "explore",
+        "travelgram",
+        "adventure",
+        "morocco"
+      ]
+    },
+    {
+      "id": "tech",
+      "kw": [
+        "تقنية",
+        "تكنولوجيا",
+        "هاتف",
+        "تطبيق",
+        "ذكاء اصطناعي",
+        "كمبيوتر",
+        "tech",
+        "ai",
+        "phone",
+        "app",
+        "digital"
+      ],
+      "ar": [
+        "تقنية",
+        "تكنولوجيا",
+        "هاتف",
+        "تطبيقات",
+        "ذكاءاصطناعي",
+        "شرحتقني",
+        "نصائحتقنية"
+      ],
+      "fr": [
+        "tech",
+        "technologie",
+        "application",
+        "intelligenceartificielle",
+        "astucestechno",
+        "numerique"
+      ],
+      "en": [
+        "tech",
+        "technology",
+        "ai",
+        "app",
+        "digital",
+        "gadget",
+        "tutorial"
+      ]
+    },
+    {
+      "id": "education",
+      "kw": [
+        "تعليم",
+        "دراسة",
+        "شرح",
+        "دورة",
+        "مدرسة",
+        "جامعة",
+        "education",
+        "learn",
+        "study",
+        "course",
+        "ecole"
+      ],
+      "ar": [
+        "تعليم",
+        "شرح",
+        "دراسة",
+        "دروس",
+        "تعلّم",
+        "معلوماتمفيدة",
+        "امتحانات"
+      ],
+      "fr": [
+        "education",
+        "apprendre",
+        "explication",
+        "cours",
+        "etudes",
+        "pedagogie"
+      ],
+      "en": [
+        "education",
+        "learning",
+        "study",
+        "explainer",
+        "knowledge",
+        "tutorial"
+      ]
+    },
+    {
+      "id": "business",
+      "kw": [
+        "عمل",
+        "تجارة",
+        "مشروع",
+        "ريادة",
+        "تسويق",
+        "مال",
+        "business",
+        "entreprise",
+        "marketing",
+        "startup"
+      ],
+      "ar": [
+        "ريادةأعمال",
+        "مشروعصغير",
+        "تسويق",
+        "عملحر",
+        "نصائحعمل",
+        "مشاريع"
+      ],
+      "fr": [
+        "entrepreneuriat",
+        "business",
+        "marketing",
+        "petiteentreprise",
+        "conseilsbusiness"
+      ],
+      "en": [
+        "business",
+        "entrepreneur",
+        "marketing",
+        "smallbusiness",
+        "startup",
+        "tips"
+      ]
+    },
+    {
+      "id": "fashion",
+      "kw": [
+        "موضة",
+        "أزياء",
+        "ملابس",
+        "ستايل",
+        "mode",
+        "fashion",
+        "style",
+        "outfit"
+      ],
+      "ar": [
+        "موضة",
+        "أزياء",
+        "ستايل",
+        "تنسيقملابس",
+        "جمال",
+        "إطلالة"
+      ],
+      "fr": [
+        "mode",
+        "style",
+        "outfit",
+        "look",
+        "tendance",
+        "fashion"
+      ],
+      "en": [
+        "fashion",
+        "style",
+        "outfit",
+        "ootd",
+        "trend",
+        "look"
+      ]
+    },
+    {
+      "id": "health",
+      "kw": [
+        "صحة",
+        "رياضة",
+        "لياقة",
+        "تغذية",
+        "sante",
+        "sport",
+        "fitness",
+        "sante"
+      ],
+      "ar": [
+        "صحة",
+        "رياضة",
+        "لياقة",
+        "تغذية",
+        "نمطحياةصحي",
+        "تمارين"
+      ],
+      "fr": [
+        "sante",
+        "sport",
+        "fitness",
+        "nutrition",
+        "bienetre",
+        "entrainement"
+      ],
+      "en": [
+        "health",
+        "fitness",
+        "workout",
+        "wellness",
+        "nutrition",
+        "exercise"
+      ]
+    },
+    {
+      "id": "beauty",
+      "kw": [
+        "جمال",
+        "مكياج",
+        "عناية",
+        "بشرة",
+        "beaute",
+        "makeup",
+        "skincare",
+        "beauty"
+      ],
+      "ar": [
+        "جمال",
+        "مكياج",
+        "عنايةبالبشرة",
+        "تجميل",
+        "روتينجمالي"
+      ],
+      "fr": [
+        "beaute",
+        "maquillage",
+        "soin",
+        "skincare",
+        "routinebeaute"
+      ],
+      "en": [
+        "beauty",
+        "makeup",
+        "skincare",
+        "glowup",
+        "beautytips"
+      ]
+    },
+    {
+      "id": "photo",
+      "kw": [
+        "تصوير",
+        "صورة",
+        "كاميرا",
+        "فيديو",
+        "photo",
+        "photography",
+        "video",
+        "camera"
+      ],
+      "ar": [
+        "تصوير",
+        "صور",
+        "كاميرا",
+        "تصويرفوتوغرافي",
+        "إضاءة",
+        "مونتاج"
+      ],
+      "fr": [
+        "photo",
+        "photographie",
+        "video",
+        "camera",
+        "montage",
+        "lumiere"
+      ],
+      "en": [
+        "photography",
+        "photo",
+        "video",
+        "camera",
+        "editing",
+        "creator"
+      ]
+    },
+    {
+      "id": "content",
+      "kw": [
+        "محتوى",
+        "صانع محتوى",
+        "creator",
+        "content",
+        "influenceur",
+        "blog"
+      ],
+      "ar": [
+        "صناعةالمحتوى",
+        "صانعمحتوى",
+        "محتوىعربي",
+        "مبدعون",
+        "نصائحالمحتوى"
+      ],
+      "fr": [
+        "createurdecontenu",
+        "contenu",
+        "creation",
+        "influence",
+        "blog"
+      ],
+      "en": [
+        "contentcreator",
+        "creator",
+        "content",
+        "digitalcreator",
+        "influencer",
+        "blogging"
+      ]
+    },
+    {
+      "id": "ramadan",
+      "kw": [
+        "رمضان",
+        "صيام",
+        "عيد",
+        "ramadan",
+        "eid",
+        "iftar"
+      ],
+      "ar": [
+        "رمضان",
+        "رمضانكريم",
+        "إفطار",
+        "عيد",
+        "شهرالخير",
+        "وصفاترمضانية"
+      ],
+      "fr": [
+        "ramadan",
+        "ramadankareem",
+        "iftar",
+        "eid",
+        "recettesramadan"
+      ],
+      "en": [
+        "ramadan",
+        "ramadankareem",
+        "iftar",
+        "eid",
+        "mubarak"
+      ]
+    },
+    {
+      "id": "motivation",
+      "kw": [
+        "تحفيز",
+        "نجاح",
+        "عادات",
+        "motivation",
+        "success",
+        "habits"
+      ],
+      "ar": [
+        "تحفيز",
+        "نجاح",
+        "تطويرالذات",
+        "عادات",
+        "إنتاجية",
+        "كلامجميل"
+      ],
+      "fr": [
+        "motivation",
+        "succes",
+        "developpementpersonnel",
+        "productivite",
+        "habitudes"
+      ],
+      "en": [
+        "motivation",
+        "success",
+        "mindset",
+        "productivity",
+        "habits",
+        "inspiration"
+      ]
+    },
+    {
+      "id": "art",
+      "kw": [
+        "فن",
+        "رسم",
+        "موسيقى",
+        "كتابة",
+        "art",
+        "dessin",
+        "music",
+        "writing"
+      ],
+      "ar": [
+        "فن",
+        "رسم",
+        "موسيقى",
+        "كتابة",
+        "إبداع",
+        "حرفيدوية"
+      ],
+      "fr": [
+        "art",
+        "dessin",
+        "musique",
+        "ecriture",
+        "creativite",
+        "artisanat"
+      ],
+      "en": [
+        "art",
+        "drawing",
+        "music",
+        "writing",
+        "creative",
+        "diy"
+      ]
+    },
+    {
+      "id": "home",
+      "kw": [
+        "منزل",
+        "ديكور",
+        "تنظيم",
+        "maison",
+        "deco",
+        "home",
+        "organisation"
+      ],
+      "ar": [
+        "ديكور",
+        "منزل",
+        "تنظيم",
+        "ترتيب",
+        "أفكارمنزلية"
+      ],
+      "fr": [
+        "maison",
+        "deco",
+        "organisation",
+        "rangement",
+        "interieur"
+      ],
+      "en": [
+        "home",
+        "decor",
+        "organization",
+        "diyhome",
+        "interior"
+      ]
+    }
+  ],
+  "platforms": {
+    "instagram": [
+      "instagram",
+      "instagood",
+      "instadaily",
+      "explorepage",
+      "reels",
+      "instareels",
+      "photooftheday",
+      "follow",
+      "likeforlikes",
+      "instagramers"
+    ],
+    "tiktok": [
+      "tiktok",
+      "fyp",
+      "pourtoi",
+      "foryou",
+      "tiktokmorocco",
+      "viral",
+      "trend",
+      "tiktokvideo",
+      "fypage",
+      "tiktoktips"
+    ],
+    "youtube": [
+      "youtube",
+      "youtuber",
+      "shorts",
+      "youtubeshorts",
+      "subscribe",
+      "newvideo",
+      "vlog",
+      "youtubechannel",
+      "tutorial",
+      "video"
+    ],
+    "general": [
+      "محتوىعربي",
+      "صناعةالمحتوى",
+      "مبدعونعرب",
+      "contenumaroc",
+      "maroc",
+      "morocco",
+      "creator",
+      "nouveaute",
+      "مجتمعالمبدعين"
+    ]
+  },
+  "generic": [
+    "محتوىهادف",
+    "معلوماتمفيدة",
+    "نصائح",
+    "جديد",
+    "شاركونا",
+    "conseils",
+    "astuces",
+    "nouveau",
+    "partage",
+    "communaute",
+    "apprendre",
+    "inspiration"
+  ]
+}
