@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: "أدوات وقوالب مجانية لصانع المحتوى العربي، تعمل داخل متصفحك. Outils et modèles gratuits pour les créateurs de contenu.",
   robots: { index: true, follow: true },
   icons: { icon: "/icon.svg" },
+  verification: { google: "NByRYnyHjyCHrdrDy8i_Q1P0rzZ2_0qa9ogJS8Bi7hA" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
