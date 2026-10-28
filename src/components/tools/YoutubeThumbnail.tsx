@@ -8,6 +8,13 @@ const t = {
   fr: { label: "Lien de la vidéo ou son identifiant", placeholder: "https://www.youtube.com/watch?v=…", show: "Afficher les images", copy: "Copier le lien de l'image", open: "Ouvrir l'image", copyLink: "Copier", copied: "Copié ✓", error: "Identifiant de vidéo invalide (11 caractères attendus).", missing: "Indisponible pour cette vidéo", rights: "Droits d'auteur : ces images appartiennent aux ayants droit des vidéos. Nous affichons uniquement leurs URL publiques, sans téléchargement direct. Utilisez vos propres images ou demandez une autorisation.", id: "Identifiant", hint: "Si la résolution maximale est absente, un substitut s'affiche automatiquement." },
 };
 
+const FRENCH_VARIANT_LABELS: Record<string, string> = {
+  default: "Par défaut",
+  mqdefault: "Moyenne",
+  hqdefault: "Haute qualité",
+  maxresdefault: "Haute résolution",
+};
+
 type Cell = { key: string; label: string; size: string; url: string; failed: boolean };
 
 export default function YoutubeThumbnail({ locale, d }: { locale: Locale; d: Dict }) {
@@ -18,7 +25,13 @@ export default function YoutubeThumbnail({ locale, d }: { locale: Locale; d: Dic
   const [copied, setCopied] = useState<string | null>(null);
   const [cells, setCells] = useState<Cell[]>([]);
 
-  const build = (videoId: string): Cell[] => THUMBNAILS.map((v) => ({ key: v.key, label: v.label, size: v.size, url: variantUrl(videoId, v.key), failed: false }));
+  const build = (videoId: string): Cell[] => THUMBNAILS.map((v) => ({
+    key: v.key,
+    label: locale === "fr" ? (FRENCH_VARIANT_LABELS[v.key] ?? v.label) : v.label,
+    size: v.size,
+    url: variantUrl(videoId, v.key),
+    failed: false,
+  }));
   const onShow = () => {
     const found = extractVideoId(input);
     if (!found) { setError(L.error); setId(null); setCells([]); return; }

@@ -23,8 +23,16 @@ export default function QrGenerator({ locale, d }: { locale: Locale; d: Dict }) 
     if (!value.trim()) { setMsg(L.empty); return; }
     const canvas = box.current?.querySelector("canvas");
     if (!canvas) return;
+    // ثبّت أبعاد الملف حتى على الشاشات ذات كثافة البكسلات العالية.
+    const exportCanvas = document.createElement("canvas");
+    exportCanvas.width = size;
+    exportCanvas.height = size;
+    const context = exportCanvas.getContext("2d");
+    if (!context) return;
+    context.imageSmoothingEnabled = false;
+    context.drawImage(canvas, 0, 0, size, size);
     const a = document.createElement("a");
-    a.href = canvas.toDataURL("image/png");
+    a.href = exportCanvas.toDataURL("image/png");
     a.download = "oudda-qr.png";
     a.click();
   };
@@ -68,7 +76,7 @@ export default function QrGenerator({ locale, d }: { locale: Locale; d: Dict }) 
         <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-line bg-white p-6">
           <div ref={box} className="rounded-xl bg-white p-2">
             {value.trim() ? (
-              <QRCodeCanvas value={value} size={Math.min(size, 320)} level={level} fgColor={fg} bgColor={bg} marginSize={4} title="QR" />
+              <QRCodeCanvas value={value} size={size} level={level} fgColor={fg} bgColor={bg} marginSize={4} title="QR" style={{ width: Math.min(size, 320), maxWidth: "100%", height: "auto" }} />
             ) : (
               <div className="grid h-[220px] w-[220px] place-items-center rounded-xl bg-ink-50 text-6xl text-ink-300">QR</div>
             )}
